@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSol - Tecnologia em Recife, PE</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand header-font font-weight-bold" href="#" id="nome-empresa">TechSol - Tecnologia em Recife</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><br><br>
+
+    <!-- Hero Section -->
+    <header id="hero-section" class="hero-section">
+    <header class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>Sobre</h1><br>
+                    <p>A TechSol é uma empresa de tecnologia inovadora sediada em Recife, Pernambuco. Nosso foco está em transformar ideias em soluções digitais de ponta para nossos clientes. Oferecemos uma variedade de serviços, incluindo desenvolvimento web, aplicativos móveis e consultoria em TI. Nossa missão é impulsionar os negócios de nossos clientes por meio de soluções tecnológicas eficazes e personalizadas.</p><br>
+                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    </header>
+    <br><br>
+
+    <!-- Serviços Section -->
+    <section class="services-section mb-4">
+        <div class="container">
+            <h2>Nossos Serviços</h2><br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/reunião.jpg" class="sala-de-reuniao" alt="Serviço 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Desenvolvimento Web</h5>
+                            <p class="card-text">Criamos sites modernos e responsivos para atender às suas
+                                necessidades.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/desenvolvendo.jpg" class="desenvolvendo-apps" alt="Serviço 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Aplicações Móveis</h5>
+                            <p class="card-text">Desenvolvemos aplicativos móveis personalizados para impulsionar
+                                seus negócios.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/porto-digital-1.jpg" class="porto-digital custom-image" alt="Serviço 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Consultoria em TI</h5>
+                            <p class="card-text">Oferecemos consultoria especializada para otimizar seus
+                                processos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br><br>
+
+    <!-- Seção de Contato -->
+    <section class="contact-section" data-aos="fade-up">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Estamos aqui para ajudar. Entre em contato conosco para discutir suas necessidades.</p>
+
+            <!-- Formulário de Contato -->
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section><br><br>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init();
+
+            const form = document.getElementById('contactForm');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                alert('Formulário enviado! (Lógica de envio a ser implementada)');
+                // Adicione aqui a lógica de envio do formulário
+            });
+        });
+    </script>
+
+<script src="scripts.js"></script>
+
+<footer class="bg-primary text-center">
+    <p>Desenvolvido por Lucas Valença</p>
+</footer>
+
+</body>
+
+</html>

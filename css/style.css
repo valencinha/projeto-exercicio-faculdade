@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold; 
+}
+
+.header-font{
+    font-weight: 900 !important;
+}
+      
+
+
+/* Estilos para a seção de herói (Hero Section) */
+.hero-section {
+    background-image: url('link-para-imagem-hero.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+}
+
+/* Estilos para a seção de serviços (Services Section) */
+.services-section {
+    padding: 80px 0;
+}
+
+.services-section h2 {
+    text-align: center;
+}
+
+.services-section .card {
+    margin-bottom: 20px;
+}
+
+
+
+/* Estilos para a seção de contato (Contact Section) */
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+}

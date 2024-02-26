@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Empresa - Tecnologia em Recife, PE</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- ... (código anterior) ... -->
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section" data-aos="fade-up">
+        <!-- ... (código anterior) ... -->
+    </header>
+
+    <!-- Serviços Section -->
+    <section class="services-section" data-aos="fade-up">
+        <!-- ... (código anterior) ... -->
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contact-section" data-aos="fade-up">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Estamos aqui para ajudar. Entre em contato conosco para discutir suas necessidades.</p>
+
+            <!-- Formulário de Contato -->
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init();
+
+            const form = document.getElementById('contactForm');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                alert('Formulário enviado! (Lógica de envio a ser implementada)');
+                // Adicione aqui a lógica de envio do formulário
+            });
+        });
+    </script>
+</body>
+
+</html>
